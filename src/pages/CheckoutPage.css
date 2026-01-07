@@ -11,8 +11,10 @@
 
 .checkout-title {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: 900;
   margin-bottom: 3rem;
+  color: #e8d4f1;
+  letter-spacing: 0.05em;
 }
 
 .checkout-layout {
@@ -38,6 +40,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
+  color: #e8d4f1;
 }
 
 .form-field {
@@ -49,16 +52,16 @@
 .form-field label {
   font-size: 0.9rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(232, 212, 241, 0.8);
 }
 
 .form-field input,
 .form-field textarea {
   padding: 0.875rem 1rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 8px;
-  color: #fff;
+  color: #e8d4f1;
   font-size: 1rem;
   transition: all 0.2s ease;
 }
@@ -66,8 +69,9 @@
 .form-field input:focus,
 .form-field textarea:focus {
   outline: none;
-  border-color: rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(139, 92, 246, 0.6);
+  background: rgba(139, 92, 246, 0.15);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.2);
 }
 
 .form-field textarea {
@@ -77,25 +81,26 @@
 
 .error-message {
   padding: 1rem;
-  background: rgba(255, 68, 68, 0.1);
-  border: 1px solid rgba(255, 68, 68, 0.2);
+  background: rgba(236, 72, 153, 0.1);
+  border: 1px solid rgba(236, 72, 153, 0.3);
   border-radius: 8px;
-  color: #ff4444;
+  color: #ec4899;
 }
 
 .place-order-button {
   padding: 1.25rem;
-  background: #fff;
-  color: #000;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
+  color: #ffffff;
   font-size: 1.125rem;
   font-weight: 600;
   border-radius: 8px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
 }
 
 .place-order-button:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 12px 32px rgba(139, 92, 246, 0.6);
 }
 
 .place-order-button:disabled {
@@ -107,15 +112,17 @@
   position: sticky;
   top: 100px;
   padding: 2rem;
-  background: #1a1a1a;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(10, 5, 20, 0.95), rgba(26, 10, 46, 0.95));
+  border: 1px solid rgba(139, 92, 246, 0.3);
   border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(139, 92, 246, 0.1);
 }
 
 .summary-title {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+  color: #e8d4f1;
 }
 
 .summary-items {
@@ -137,6 +144,7 @@
   height: 60px;
   object-fit: cover;
   border-radius: 6px;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 .summary-item-info {
@@ -148,20 +156,22 @@
 .summary-item-name {
   font-size: 0.9rem;
   font-weight: 500;
+  color: #e8d4f1;
 }
 
 .summary-item-quantity {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(232, 212, 241, 0.6);
 }
 
 .summary-item-price {
   font-weight: 600;
+  color: #c4b5fd;
 }
 
 .summary-divider {
   height: 1px;
-  background: rgba(255, 255, 255, 0.1);
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), transparent);
   margin: 1.5rem 0;
 }
 
@@ -170,12 +180,14 @@
   justify-content: space-between;
   margin-bottom: 1rem;
   font-size: 1rem;
+  color: rgba(232, 212, 241, 0.8);
 }
 
 .summary-row.total {
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1rem;
+  color: #e8d4f1;
 }
 
 .checkout-error {
@@ -185,6 +197,7 @@
 
 .checkout-error h2 {
   font-size: 2rem;
+  color: #e8d4f1;
 }
 
 @media (max-width: 1024px) {
